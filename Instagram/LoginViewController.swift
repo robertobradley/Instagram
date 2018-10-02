@@ -11,9 +11,9 @@ import Parse
 
 class LoginViewController: UIViewController {
 //--OUTLETS--//
+
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    
     
     
 //--VARIABLES--//
@@ -23,8 +23,8 @@ class LoginViewController: UIViewController {
 //-------------Visual Break----------//
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
     }
 //--FUNCTIONS--//
     @IBAction func onSignIn(_ sender: Any)
@@ -37,6 +37,7 @@ class LoginViewController: UIViewController {
         }
     }
     
+ 
     @IBAction func onSignUp(_ sender: Any)
     {
         let newUser = PFUser()
@@ -51,9 +52,9 @@ class LoginViewController: UIViewController {
                     print("Username is already taken")
                 }
                 else{
-               self.performSegue(withIdentifier: "loginSegue", sender: nil)
-                print(error.localizedDescription)
-                
+                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                    print(error.localizedDescription)
+                    
                 }
             } else {
                 print("User Registered successfully")

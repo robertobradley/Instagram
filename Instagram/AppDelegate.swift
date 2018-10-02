@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Instagram
 //
-//  Created by user144731 on 9/27/18.
-//  Copyright © 2018 user144731. All rights reserved.
+//  Created by Roberto Bradley on 9/27/18.
+//  Copyright © 2018 Roberto Bradley. All rights reserved.
 //
 
 import UIKit
